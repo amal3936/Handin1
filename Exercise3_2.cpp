@@ -22,7 +22,7 @@ int main()
 {
     clock_t start, end;
     double time_used;
-    int n_values[] = {10, 100, 1000, 10000, 100000,1000000};
+    int n_values[] = {10, 100, 2000 ,10000, 25000, 40000, 100000, 300000, 500000};
     for (int n : n_values)
     {
         start = clock();
@@ -34,19 +34,24 @@ int main()
 }
 
 //Running time
-/*N = 10: 0.000002 seconds
-N = 100: 0.000015 seconds
-N = 1000: 0.001394 seconds
-N = 10000: 0.089372 seconds
-N = 100000: 7.666053 seconds
-N = 1000000: 795.596480 seconds*/
-//y = 8E-10x2 - 3E-06x + 0,0109 == x^2
+/*N = 10: 0.000003 seconds
+N = 100: 0.000018 seconds
+N = 2000: 0.004856 seconds
+N = 10000: 0.086271 seconds
+N = 25000: 0.467836 seconds
+N = 40000: 1.197490 seconds
+N = 100000: 7.512304 seconds
+N = 300000: 67.298395 seconds
+N = 500000: 189.855963 seconds*/
 
 
 //Optimization
-/*N = 10: 0.000002 seconds
+/*N = 10: 0.000001 seconds
 N = 100: 0.000001 seconds
-N = 1000: 0.000001 seconds
+N = 2000: 0.000001 seconds
 N = 10000: 0.000000 seconds
-N = 100000: 0.000000 seconds
-N = 1000000: 0.000001 seconds*/
+N = 25000: 0.000000 seconds
+N = 40000: 0.000000 seconds
+N = 100000: 0.000001 seconds
+N = 300000: 0.000000 seconds
+N = 500000: 0.000000 seconds*/
